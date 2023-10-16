@@ -1,3 +1,692 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d11483ace07506be37d76dda4151fb92a162ae574124731dc9b221a6cbccc99
-size 11319
+.navBar {
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLinks ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    padding: 0;
+    padding-left: 3rem;
+    margin: 0;
+}
+
+.navItem {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.logoMain {
+    color: white;
+    font-family: Titan One;
+    font-size: 40px;
+    font-weight: 400;
+    display: none;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.logo {
+    color: white;
+    font-family: Titan One;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    margin-right: 10rem;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    padding-right: 3rem;
+}
+
+.icons i {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/* end of navBar */
+
+.mainPage{
+    background-image: url('/hero2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.mainpageTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+    padding-bottom: 185px;
+    gap: 1rem;
+}
+
+.mainpageTxt .heading{
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.mainpageTxt .shopBtn a{
+    color: white;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.popularDivItems{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productName{
+    padding: 0.5rem 0rem;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;    
+}
+
+.product{
+    width: max-content;
+}
+
+.phantomDiv{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.phantomTxt{
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #696969;    
+}
+
+.phantomCollection{
+    background-color: #696969;
+    width: max-content;
+    color: white;
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0.1rem 0.3rem;    
+    border-radius: 5px;
+}
+
+.productInfo .price{
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #696969;    
+}
+
+.popularDiv{
+    margin-top: 50px;
+    padding-top: 2rem;
+    margin: auto;
+}
+
+.popularDivTop{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.popularDivTop .left{
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;    
+}
+
+.popularDivTop .right{
+    color: white;
+    background-color: black;
+    display: inline;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;    
+}
+
+.popularDivItems{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popularDivItems2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product2{
+    width: 30%;
+}
+
+.gridContainer {
+    padding-top: 5rem;
+    display: grid;
+    display: flex;
+    grid-template-columns: repeat(6, 1fr, 1fr, 1fr);
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    margin-left: 200px;
+}
+
+.gridItem {
+    padding: 20px;
+}
+
+.gridItem:nth-child(1) {
+    grid-row: span 6;
+}
+.gridItem:nth-child(2) {
+    grid-row: span 6;
+}
+
+.newCollectionTxt{
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;  
+}
+
+.checkItOut{
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
+.shopNowBtn{
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #C5C5C580;
+  border: none;
+  width: max-content;
+  padding: 0.5rem 1rem;  
+  border-radius: 20px;
+  color: white;
+}
+
+.gridItem1{
+  display: flex;
+  margin-left: 0px;
+}
+
+.gridItemTxtDiv{
+  margin-top: -200px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gridItemTxtDiv1{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 5;
+  margin-right: -250px;
+  margin-top: 400px;
+}
+
+.pumpCover{
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
+.overSized{
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;  
+  color: white;
+}
+
+.lastChance{
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: white;
+}
+
+.dontMiss{
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: right;  
+  color: white;
+}
+
+.gridItemTxtDiv2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-left: -230px;
+  margin-top: 350px;
+}
+
+.gridItem2{
+  display: flex;
+  margin-left: -30px;
+}
+
+.gridItem:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer {
+    background: white;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0px -2px 18px 0px #0000001A;
+}
+
+.footerOuter{
+    width: 80%;
+    margin: auto;
+}
+
+.footerLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footerInternal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    align-items:flex-end;
+}
+
+.footer .brandInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoIcons i{
+    font-size: 25px;
+}
+
+.footer .infoIcons {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.footer .faqList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color: black;
+    gap: 1.4rem;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.yourBrandTxt {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.yourBrandInc {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.agencyHq {
+    color: black;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.yourTxt{
+    border-bottom: 2px solid #ff5733;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:980px){
+
+    .mainPage{
+        background: black;
+    }
+    
+    .navBar .logo{
+        display: none;
+    }
+
+    .navBar ul{
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .navBar .right{
+        padding-right: 1rem;
+    }
+
+    .mainpageTxt{
+        margin-top: 250px;
+    }
+
+    .popularDivItems{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* .Swiper{
+        display: none !important;
+    } */
+
+    .swiperWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SlideItem{
+        width: 100%;
+    }
+
+    .product{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productName{
+        font-size: 10px;
+    }
+
+    .phantomDiv{
+        flex-direction: column;
+    }
+
+    .image{
+        width: 80px;
+    }
+    
+    .gridContainer{
+        flex-direction: column;
+        margin: auto;
+        padding-top: 5rem;
+    }
+
+    .gridItem:nth-child(1){
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    .gridItem1{
+        padding: 0rem 0rem 0rem 3rem;
+    }
+
+    .gridItem2{
+        margin-left: 20px;
+        padding: 0rem 1rem 0rem 0.5rem;
+    }
+
+    .gridItem{
+        padding: 2rem 0;
+    }
+
+    .gridItemTxtDiv2{
+        margin-top: 180px;
+    }
+
+    .gridItemTxtDiv1{
+        margin-top: 210px;
+    }
+
+    /* .landingLeftGridImg1{
+        width: 800px;
+    }
+
+    .landingLeftGridImg2{
+        width: 800px;
+    } */
+
+    .footerRight{
+        width: 100%;
+    }
+
+    .infoIcons{
+        margin: auto;
+        width: 100%;
+    }
+
+    .footerInternal{
+        flex-direction: column;
+    }
+
+    .footer .name .yourBrandTxt{
+        font-size: 18px;
+    }
+
+    .footer .brandLocation .boldText .yourBrandInc{
+        font-size: 15px;
+    }
+
+    .footer .agencyHq{
+        font-size: 15px;
+    }
+
+    .footer .faqList li{
+        font-size: 13px;
+    }
+}
+
+/* for galaxy fold only */
+
+@media only screen and (max-width:281px){
+    .navBar ul{
+        padding: 0;
+        gap: 0.5rem;
+    }
+
+    .navBar .right{
+        padding: 0;
+    }
+
+    .navBar .icons{
+        gap: 0.5rem;
+    }
+
+    
+}
+
+
+/* for the logo on small screens */
+
+
+@media only screen and (min-width:980px){
+    .mainpageTxt .logoMain{
+        display: none;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:980px){
+    .popularDivItems2{
+        display: none;
+    }
+}
+
+/* for ipad air */
+
+@media only screen and (min-width:800px){
+    .gridItem:nth-child(1){
+        padding: 0rem 1rem 0rem 10rem;
+    }
+}
+
+/* for ipad mini */
+
+
+@media only screen and (min-width:760px){
+    .gridItem:nth-child(1){
+        padding: 0rem 1rem 0rem 9rem;
+    }
+}
+
+
+/* for surface pro 7 */
+
+@media only screen and (min-width:910px){
+    .gridItem:nth-child(1){
+        padding: 0rem 1rem 0rem 12rem;
+    }
+}
+
+
+
+/* for nest hub */
+
+@media only screen and (min-width:1279px) and (max-width:1281px){
+    .gridContainer{
+        margin-left: -100px !important;
+        padding-top: 5rem;
+    }
+}
+
+/* for nest hub real */
+
+@media only screen and (min-width:1023px) and (max-width:1025px){
+    .gridContainer{
+        margin-left: -100px;
+        padding-top: 5rem;
+    }
+}
+
+@media only screen and (min-width:1026px){
+    .gridContainer{
+        margin-left: 100px;
+    }
+}
+

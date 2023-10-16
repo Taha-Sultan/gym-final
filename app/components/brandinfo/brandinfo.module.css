@@ -1,3 +1,276 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2475681cba9f217fc9a5d36fa3e61de6dd9324c97810f2c9bd04131dd9c6a2b
-size 4346
+.body{
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLinks ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    padding: 0;
+    padding-left: 3rem;
+    margin: 0;
+}
+
+.navItem {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.logoMain {
+    color: white;
+    font-family: Titan One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.logo {
+    color: white;
+    font-family: Titan One;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    margin-right: 10rem;
+    text-align: center;
+}
+
+.brandImage{
+    width:103%;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    padding-right: 3rem;
+}
+
+.icons i {
+    color: white;
+    font-size: 20px;
+}
+
+.mainPage{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.txtDiv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1.4rem;
+}
+
+.txtDivHeading{
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+}
+
+.txtDivPara{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;    
+    width: 70%;
+    margin: auto;
+}
+
+.footer {
+    background: white;
+    padding: 3rem 0rem;
+}
+
+.footerOuter{
+    width: 80%;
+    margin: auto;
+}
+
+.infoIcons i{
+    font-size: 25px;
+}
+
+.footerInternal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    align-items:flex-end;
+}
+
+.footer .brandInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .infoIcons {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.footer .faqList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color: black;
+    gap: 1.4rem;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.yourBrandTxt {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.yourBrandInc {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.normalText{
+    padding: 1rem 0rem;
+}
+
+.agencyHq {
+    color: black;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 1rem 0rem;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.yourTxt{
+    border-bottom: 2px solid #ff5733;
+}
+
+.imgDiv{
+    padding: 0;
+    width: 50%;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:980px){
+    .navbar {
+        width: 100% !important;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .navbar ul {
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navbar .right {
+        padding-right: 1rem;
+    }
+
+    .imgDiv{
+        width: 110%;
+        padding: 0;
+    }
+
+    .txtDiv{
+        width: 100%;
+    }
+
+    .txtDivParas{
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+
+    .txtDivPara{
+        width: 100%;
+    }
+
+    .footerRight{
+        width: 100%;
+    }
+
+    .infoIcons{
+        margin: auto;
+        width: 100%;
+    }
+
+    .footerInternal{
+        flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .name .yourBrandTxt{
+        font-size: 18px;
+    }
+
+    .footer .brand-location .boldText .yourBrandInc{
+        font-size: 15px;
+    }
+
+    .footer .agencyHq{
+        font-size: 15px;
+    }
+
+    .footer .faqList li{
+        font-size: 13px;
+    }
+
+    .mainPage{
+        flex-direction: column;
+    }
+}

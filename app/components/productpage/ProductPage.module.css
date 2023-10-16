@@ -1,3 +1,557 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:500bf096097ad492a2b28044cdb1c153b3a4711687efe4867f0810c4cb110690
-size 9260
+.body {
+    overflow-x: hidden;
+}
+
+.navBar {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLinks ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    padding: 0;
+    padding-left: 3rem;
+    margin: 0;
+}
+
+.navItem {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.logoMain {
+    color: white;
+    font-family: Titan One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.logo {
+    color: white;
+    font-family: Titan One;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    margin-right: 10rem;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    padding-right: 3rem;
+}
+
+.icons i {
+    color: white;
+    font-size: 20px;
+}
+
+
+.mainPage {
+    color: black;
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgMainDiv{
+    width: 40%;
+}
+
+.descDiv{
+    width: 50%;
+}
+
+.productSizes {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.headingDesc {
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.priceAndRating {
+    align-items: center;
+    padding: 1rem 0rem 0rem 0rem;
+    gap: 1.5rem;
+}
+
+.priceAndRating .price {
+    gap: 1rem;
+}
+
+.priceAndRating .price {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.paraDesc {
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 70%;
+    padding: 2rem 0rem;
+    border-bottom: solid 1px black;
+}
+
+.sizeTxt {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0.5rem 0rem;
+}
+
+.sizeBtns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    width: 70%;
+}
+
+.sizeBtnMain {
+    border: 1px solid black;
+    width: max-content;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    background-color: white;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.sizeBtn {
+    border: 1px solid #CFCFCF;
+    color: #CFCFCF;
+    width: max-content;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    background-color: white;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.addToCart {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 2px solid black;
+    width: 70%;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.payByGpay {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 0.5rem 0rem;
+    color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.gpayTxt {
+    margin: auto;
+}
+
+.payFont {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.buyWith {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.infoPaymentDesc {
+    width: 70%;
+    border-bottom: 1px solid black;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txtInfoDescPay {
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.chevron {
+    font-size: 20px;
+}
+
+.sizeChartDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    margin-top: 30px;
+    border-top: 1px solid black;
+}
+
+.sizeChartTxt {
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sizeChartIcon {
+    font-style: 30px;
+}
+
+/* more from us div */
+
+
+.moreFromUs {
+    margin-top: 100px;
+}
+
+.headingMore {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.descMore {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 70%;
+    color: black;
+}
+
+.priceMore {
+    font-family: Poppins;
+    width: max-content;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #696969;
+}
+
+.moreProducts {
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.productMore {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.endLine {
+    padding-bottom: 50px;
+}
+
+
+.footer {
+    background: white;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0px -2px 18px 0px #0000001A;
+}
+
+.footerOuter{
+    width: 80%;
+    margin: auto;
+}
+
+.footerLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footerInternal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    align-items:flex-end;
+}
+
+.footer .brandInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoIcons i{
+    font-size: 25px;
+}
+
+.footer .infoIcons {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.footer .faqList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color: black;
+    gap: 1.4rem;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.yourBrandTxt {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.yourBrandInc {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.agencyHq {
+    color: black;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.yourTxt{
+    border-bottom: 2px solid #ff5733;
+}
+
+
+.gpayTxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width:980px){
+    .navBar {
+        width: 100% !important;
+    }
+
+    .navBar .logo {
+        display: none;
+    }
+
+    .navBar ul {
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navBar .right {
+        padding-right: 1rem;
+    }
+
+    .txt-main{
+        width: 100%;
+    }
+
+    .mainFormDiv{
+        width: 95%;
+    }
+
+    .footerRight{
+        width: 100%;
+    }
+
+    .infoIcons{
+        margin: auto;
+        width: 100%;
+    }
+
+    .footerInternal{
+        flex-direction: column;
+    }
+
+    .footer .name .yourBrandTxt{
+        font-size: 18px;
+    }
+
+    .footer .brandLocation .boldText .yourBrandInc{
+        font-size: 15px;
+    }
+
+    .footer .agencyHq{
+        font-size: 15px;
+    }
+
+    .footer .faqList li{
+        font-size: 13px;
+    }
+
+    .mainPage{
+        flex-direction: column;
+    }
+
+    .imgMainDiv{
+        width: 100%;
+    }
+    
+    .descDiv{
+        width: 100%;
+    }
+
+    .topDesc{
+        width: 100%;
+    }
+
+    .paraDesc{
+        width: 100%;
+    }
+
+    .sizeBtns{
+        width: 100%;
+    }
+
+    .addToCart{
+        width: 100%;
+    }
+
+    .payByGpay{
+        width: 100%;
+        display: flex;
+    }
+
+    .infoPaymentDesc{
+        width: 100%;
+    }
+
+    .txtInfoDescPay{
+        width: 100%;
+    }
+
+    .imgProduct{
+        width: 20%;
+    }
+
+    .productSizes{
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .productMore{
+        width: 100%;
+    }
+
+    .moreProducts{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+@media only screen and (max-width:1025px) {
+    .productSizes {
+        gap: 0rem;
+    }
+}
