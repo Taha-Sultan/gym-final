@@ -1,0 +1,158 @@
+.footer {
+    background: white;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0px -2px 18px 0px #0000001A;
+}
+
+.footerOuter{
+    width: 80%;
+    margin: auto;
+}
+
+.footerLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footerInternal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    align-items:flex-end;
+}
+
+.footer .brandInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoIcons i{
+    font-size: 25px;
+}
+
+.footer .infoIcons {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.footer .faqList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color: black;
+    gap: 1.4rem;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.yourBrandTxt {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.yourBrandInc {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.agencyHq {
+    color: black;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.yourTxt{
+    border-bottom: 2px solid #ff5733;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:980px){
+    .navBar {
+        width: 100% !important;
+    }
+
+    .navBar .logo {
+        display: none;
+    }
+
+    .navBar ul {
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navBar .right {
+        padding-right: 1rem;
+    }
+
+    .footerRight{
+        width: 100%;
+    }
+
+    .infoIcons{
+        margin: auto;
+        width: 100%;
+    }
+
+    .footerInternal{
+        flex-direction: column;
+    }
+
+    .footer .name .yourBrandTxt{
+        font-size: 18px;
+    }
+
+    .footer .brandLocation .boldText .yourBrandInc{
+        font-size: 15px;
+    }
+
+    .footer .agencyHq{
+        font-size: 15px;
+    }
+
+    .footer .faqList li{
+        font-size: 13px;
+    }
+
+
+    /* same module end */
+
+    .txtMain{
+        width: 100%;
+    }
+
+    .mainFormDiv{
+        width: 95%;
+    }
+
+}
