@@ -1,3 +1,6 @@
+.body{
+    overflow-x: hidden;
+}
 .navBar {
     background-color: transparent;
     display: flex;
@@ -66,7 +69,8 @@
     background-image: url('/hero2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    width: 100%;
 }
 
 .mainpageTxt{
@@ -116,7 +120,7 @@
 }
 
 .productName{
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0rem 0rem 0rem;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 700;
@@ -133,8 +137,18 @@
 .phantomDiv{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
+
+.SlideItem{
+    width: 100%;
+}
+
+.sliderTxtDiv{
+    width: 80%;
+    margin: auto;
+}
+
 
 .phantomTxt{
     font-family: Poppins;
@@ -157,7 +171,7 @@
     letter-spacing: 0em;
     text-align: left;
     padding: 0.1rem 0.3rem;    
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .productInfo .price{
@@ -177,7 +191,7 @@
 }
 
 .popularDivTop{
-    width: 90%;
+    width: 97%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -205,8 +219,8 @@
     line-height: 44px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;    
+    padding: 0rem 1rem;
+    border-radius: 23px;    
 }
 
 .popularDivItems{
@@ -227,11 +241,12 @@
     padding-top: 5rem;
     display: grid;
     display: flex;
+    align-items: center;
     grid-template-columns: repeat(6, 1fr, 1fr, 1fr);
     grid-template-rows: 2fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 8px;
     width: 100%;
-    margin-left: 200px;
+    margin-left: 0px;
 }
 
 .gridItem {
@@ -282,7 +297,9 @@
 
 .gridItem1{
   display: flex;
-  margin-left: 0px;
+  margin-left: 50px;
+  width: 90%;
+  margin-top: 2rem;
 }
 
 .gridItemTxtDiv{
@@ -299,7 +316,8 @@
   gap: 0.5rem;
   z-index: 5;
   margin-right: -250px;
-  margin-top: 400px;
+  margin-top:410px;
+  padding-bottom: 2rem;
 }
 
 .pumpCover{
@@ -348,112 +366,34 @@
   align-items: flex-end;
   gap: 0.5rem;
   margin-left: -230px;
-  margin-top: 350px;
+  padding-bottom: 2rem;
+  margin-top: 490px;
 }
 
 .gridItem2{
   display: flex;
-  margin-left: -30px;
+  margin-left: 50px;
+  /* height: 150%; */
+  width: 100%;
 }
 
 .gridItem:nth-child(2){
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.7rem;
   align-items: center;
 }
 
-.footer {
-    background: white;
-    padding: 3rem 0rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    box-shadow: 0px -2px 18px 0px #0000001A;
-}
-
-.footerOuter{
-    width: 80%;
-    margin: auto;
-}
-
-.footerLeft{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.footerInternal {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0;
-    align-items:flex-end;
-}
-
-.footer .brandInfo {
-    display: flex;
-    justify-content: space-between;
-}
-
-.infoIcons i{
+.arrowDiv{
+    z-index: 99;
+    margin-left: 1290px;
+    position: absolute;
+    margin-top: 230px;
     font-size: 25px;
+    color: #CFCFCF;
 }
-
-.footer .infoIcons {
-    display: flex;
-    gap: 3rem;
-    width: max-content;
-    margin: auto;
-    padding-top: 3rem;
-}
-
-.footer .faqList {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+.arrowDiv:hover{
     color: black;
-    gap: 1.4rem;
-    margin: 0;
-    padding: 0;
-    font-family: Poppins;
-    font-size: 17px;
-    font-weight: 500;
-    text-align: left;
-}
-
-.yourBrandTxt {
-    font-family: Poppins;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 42px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: black;
-}
-
-.yourBrandInc {
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: black;
-}
-
-.agencyHq {
-    color: black;
-    font-family: Poppins;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.yourTxt{
-    border-bottom: 2px solid #ff5733;
 }
 
 
@@ -471,22 +411,52 @@
 
 
 @media only screen and (max-width:980px){
-
-    .mainPage{
-        background: black;
+    .navBar {
+        width: 100% !important;
     }
-    
-    .navBar .logo{
+
+    .navBar .logo {
         display: none;
     }
 
-    .navBar ul{
+    .navBar ul {
         gap: 1rem;
         padding-left: 1rem;
     }
-    
-    .navBar .right{
+
+    .navBar .right {
         padding-right: 1rem;
+    }
+
+    .navBar .right{
+        gap: 0.7rem;
+    }
+
+    .popularDivTop .left{
+        font-size: 20px;
+    }
+    .popularDivTop .right{
+        font-size: 15px;
+    }
+
+    .imgGrey{
+        width: 60px;
+    }
+
+    .sliderTxtDiv{
+        width: 95%;
+    }
+
+    .SlideItem{
+        padding: 0rem 1rem;
+    }
+
+    .phantomCollection{
+        display: none;
+    }
+
+    .mainPage{
+        height: 100%;
     }
 
     .mainpageTxt{
@@ -537,16 +507,21 @@
     }
 
     .gridItem:nth-child(1){
-        padding: 0rem 1rem 0rem 1rem;
+        /* padding: 0rem 1rem 0rem 1rem; */
+        width: 90%;
+        /* margin-left: 20px; */
     }
 
     .gridItem1{
-        padding: 0rem 0rem 0rem 3rem;
+        margin-left: 3git0px;
+        /* padding: 0rem 0rem 0rem 3rem; */
+        width: 90%;
     }
 
     .gridItem2{
-        margin-left: 20px;
-        padding: 0rem 1rem 0rem 0.5rem;
+        margin-left: 5px;
+        width: 88%;
+        /* padding: 0rem 1rem 0rem 0.5rem; */
     }
 
     .gridItem{
@@ -555,10 +530,14 @@
 
     .gridItemTxtDiv2{
         margin-top: 180px;
+        padding-bottom: 1.5rem;
+        margin-left: -150px;
     }
 
     .gridItemTxtDiv1{
         margin-top: 210px;
+        padding-bottom: 1.5rem;
+        margin-right: -240px;
     }
 
     /* .landingLeftGridImg1{
@@ -597,7 +576,19 @@
     .footer .faqList li{
         font-size: 13px;
     }
+    .newCollectionTxt{
+        font-size: 30px;
+    }
+
+    .pumpCover{
+        font-size: 30px;
+    }
+
+    .lastChance{
+        font-size: 30px;
+    }
 }
+
 
 /* for galaxy fold only */
 
@@ -684,9 +675,22 @@
     }
 }
 
-@media only screen and (min-width:1026px){
+@media only screen and (min-width:2617px) and (max-width:2619px){
     .gridContainer{
-        margin-left: 100px;
+        margin-left: 530px;
+    }
+
+    .gridItem:nth-child(2){
+        gap: 1rem;
+    }
+
+    .gridItem1{
+        width: 85%;
+    }
+
+    .gridItem2{
+        width: 87%;
+        margin-left: 18px;
     }
 }
 
@@ -694,5 +698,166 @@
 @media only screen and (min-width:2555px) and (max-width:2561px){
     .gridContainer{
         margin-left: 500px;
+    }
+
+    .gridItem1{
+        width: 88%;
+    }
+
+    .gridItem2{
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .gridItemTxtDiv{
+        margin-top: -210px;
+    }
+}
+
+
+
+
+/* best */
+
+
+
+@media only screen and (min-width:765px) and (max-width:770px){
+    .gridItem:nth-child(1){
+        padding: 0rem 1rem 3rem 1.5rem !important;
+        width: 72% !important;
+    }
+
+    .gridItem:nth-child(2){
+        gap: 5rem;
+    }
+
+    .imgGrey{
+        width: 100px !important;
+    }
+
+    .gridItem1{
+        width: 95% !important;
+        padding: 0 !important;
+        margin-left: -30px !important;
+    }
+
+    .gridItem2{
+        width: 100% !important;
+        margin-right: 1.5rem !important;
+        padding: 0 !important;
+    }
+
+    .gridItemTxtDiv1{
+        margin-top: 450px !important;
+        margin-left: 20px;
+    }
+
+    .gridItemTxtDiv2{
+        margin-top: 350px !important;
+        margin-left: -180px !important;
+        padding: 0rem 0rem 1rem 1rem !important;
+    }
+
+    .arrowDiv{
+        margin-left: 675px;
+        margin-top: 130px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+@media only screen and (min-width:1438px) and (max-width:1441px){
+    .gridItem2{
+        width: 100% !important;
+        margin-left: 30px;
+    }
+
+    .gridItemTxtDiv1{
+        padding-bottom: 3rem;
+        margin-top: 380px;
+    }
+
+    .gridContainer{
+        width: max-content;
+    }
+
+    .arrowDiv{
+        margin-left: 1170px;
+
+    }
+}
+
+
+@media only screen and (min-width:2559px) and (max-width:2561px){
+    .gridContainer{
+        width: max-content;
+    }
+
+    .arrowDiv{
+        margin-left: 1880px;
+    }
+}
+
+@media only screen and (min-width:1020px) and (max-width:1025px){
+    .imgGrey{
+        width: 150px !important;
+    }
+
+    .gridItem:nth-child(2){
+        gap: 0.4rem;
+    }
+
+    .gridItem:nth-child(1){
+        width: 82% !important;
+    }
+
+    .gridItem:nth-child(1){
+        width: 82% !important;
+    }
+
+    .gridItem1{
+        width: 100% !important;
+        margin-top: 50px !important;
+    }
+
+    .gridItem2{
+        width: 100% !important;
+        margin-left: 10px !important;
+    }
+
+    .gridItemTxtDiv1{
+        margin-top: 300px !important;
+        margin-right: -240px !important;
+    }
+
+    .gridItemTxtDiv2{
+        margin-top: 260px;
+        padding-bottom: 1rem;
+    }
+
+    .arrowDiv{
+        margin-left: 830px;
+        margin-top: 180px;
+    }
+}
+
+@media only screen and (min-width:318px) and (max-width:321px){
+    .arrowDiv{
+        margin-left: 270px;
+        margin-top: 120px;
+        font-size: 20px;
+    }
+
+    .gridItem:nth-child(2){
+        gap: 5rem;
+    }
+}
+
+
+@media only screen and (min-width:2617px) and (max-widht:2619px){
+    .gridItem2{
+        width: 100% !important;
     }
 }
