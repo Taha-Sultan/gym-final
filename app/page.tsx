@@ -24,7 +24,7 @@ const poppin8 = Poppins({ subsets:["latin"], weight: ["800"] });
 
 const Page = () => {
   return (
-    <body style={{overflowX:'hidden'}}>
+    <body className={styles.body} style={{overflowX:'hidden'}}>
       {/* <h1>Hello WOrld!</h1>
       <Link href="/brandinfo">Brand Page</Link><br />
       <Link href="/helppage">Help Page</Link><br />
@@ -65,8 +65,13 @@ const Page = () => {
         </div>
       </div>
 
+      <div className={styles.arrowDiv}><i className="bi bi-arrow-right-circle"></i></div>
 
+    
+
+      <div className={styles.sliderTxtDiv}>
       <div className={`container ${styles.popularDiv}`}>
+      <div className={styles.txtSwiperOnly}></div>
       <div className={styles.popularDivTop}>
             <div className={styles.left} style={poppin8.style}>POPULAR</div>
             <div className={styles.right} style={poppin8.style}>
@@ -85,7 +90,7 @@ const Page = () => {
           <SwiperSlide  className={styles.SlideItem}>
           <div className={`${styles.product} col-lg-3 m-auto ${styles.product1}`}>
                   <div className={styles.image}>
-                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={200} />
+                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={220} className={styles.imgGrey} />
                   </div>
                   <div className={styles.productInfo}>
                       <div className={styles.productName} style={poppin7.style}>Product Name</div>
@@ -100,7 +105,7 @@ const Page = () => {
           <SwiperSlide className={styles.SlideItem}>
           <div className={`${styles.product} col-lg-3 m-auto ${styles.product1}`}>
                   <div className={styles.image}>
-                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={200} />
+                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={220} className={styles.imgGrey} />
                   </div>
                   <div className={styles.productInfo}>
                       <div className={styles.productName} style={poppin7.style}>Product Name</div>
@@ -115,7 +120,7 @@ const Page = () => {
           <SwiperSlide className={styles.SlideItem}>
           <div className={`${styles.product} col-lg-3 m-auto ${styles.product1}`}>
                   <div className={styles.image}>
-                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={200} />
+                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={220} className={styles.imgGrey} />
                   </div>
                   <div className={styles.productInfo}>
                       <div className={styles.productName} style={poppin7.style}>Product Name</div>
@@ -130,7 +135,7 @@ const Page = () => {
           <SwiperSlide className={styles.SlideItem}>
           <div className={`${styles.product} col-lg-3 m-auto ${styles.product1}`}>
                   <div className={styles.image}>
-                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={200} />
+                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={220} className={styles.imgGrey} />
                   </div>
                   <div className={styles.productInfo}>
                       <div className={styles.productName} style={poppin7.style}>Product Name</div>
@@ -145,7 +150,7 @@ const Page = () => {
           <SwiperSlide className={styles.SlideItem}>
           <div className={`${styles.product} col-lg-3 m-auto ${styles.product1}`}>
                   <div className={styles.image}>
-                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={200} />
+                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={220} className={styles.imgGrey} />
                   </div>
                   <div className={styles.productInfo}>
                       <div className={styles.productName} style={poppin7.style}>Product Name</div>
@@ -160,7 +165,7 @@ const Page = () => {
           <SwiperSlide className={styles.SlideItem}>
           <div className={`${styles.product} col-lg-3 m-auto ${styles.product1}`}>
                   <div className={styles.image}>
-                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={200} />
+                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={220} className={styles.imgGrey} />
                   </div>
                   <div className={styles.productInfo}>
                       <div className={styles.productName} style={poppin7.style}>Product Name</div>
@@ -175,7 +180,7 @@ const Page = () => {
           <SwiperSlide className={styles.SlideItem}>
           <div className={`${styles.product} col-lg-3 m-auto ${styles.product1}`}>
                   <div className={styles.image}>
-                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={200} />
+                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={220} className={styles.imgGrey} />
                   </div>
                   <div className={styles.productInfo}>
                       <div className={styles.productName} style={poppin7.style}>Product Name</div>
@@ -190,7 +195,7 @@ const Page = () => {
           <SwiperSlide className={styles.SlideItem}>
           <div className={`${styles.product} col-lg-3 m-auto ${styles.product1}`}>
                   <div className={styles.image}>
-                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={200} />
+                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={220} className={styles.imgGrey} />
                   </div>
                   <div className={styles.productInfo}>
                       <div className={styles.productName} style={poppin7.style}>Product Name</div>
@@ -205,7 +210,7 @@ const Page = () => {
           <SwiperSlide className={styles.SlideItem}>
           <div className={`${styles.product} col-lg-3 m-auto ${styles.product1}`}>
                   <div className={styles.image}>
-                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={200} />
+                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={220} className={styles.imgGrey} />
                   </div>
                   <div className={styles.productInfo}>
                       <div className={styles.productName} style={poppin7.style}>Product Name</div>
@@ -220,7 +225,7 @@ const Page = () => {
           <SwiperSlide className={styles.SlideItem}>
           <div className={`${styles.product} col-lg-3 m-auto ${styles.product1}`}>
                   <div className={styles.image}>
-                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={200} />
+                      <Image src="/popular-item-img.jpg" alt="" height={1000} width={220} className={styles.imgGrey} />
                   </div>
                   <div className={styles.productInfo}>
                       <div className={styles.productName} style={poppin7.style}>Product Name</div>
@@ -235,10 +240,14 @@ const Page = () => {
         </div>
       </Swiper>
       </div>
+      </div>
+      
+      
+      
 
       <div className={styles.gridContainer}>
             <div className={styles.gridItem}>
-              <Image src="/landing-right-grid-img.png" alt="" height={500} width={500}/>
+              <Image src="/landing-right-grid-img.png" alt="" height={2000} width={555} className={styles.biggestGridImg}/>
               <div className={styles.gridItemTxtDiv}>
                 <div className={styles.newCollectionTxt} style={poppin8.style}>
                   NEW <br/>COLLECTION
@@ -264,10 +273,10 @@ const Page = () => {
                     SHOP NOW
                   </button>
                 </div>
-                <Image src="/landing-left-grid-img-1.png" alt="" width={530 } height={1000} className={styles.landingLeftGridImg1}/>
+                <Image src="/landing-left-grid-img-1.png" alt="" width={550 } height={90} className={styles.landingLeftGridImg1}/>
               </div>
               <div className={styles.gridItem2}>
-                <Image src="/landing-left-grid-img-2.png" alt="" width={540} height={1000} className={styles.landingLeftGridImg2}/>
+                <Image src="/landing-left-grid-img-2.png" alt="" width={525} height={90} className={styles.landingLeftGridImg2}/>
                 <div className={styles.gridItemTxtDiv2}>
                   <div className={styles.lastChance} style={poppin8.style}>
                     LAST <br/>CHANCE
@@ -291,5 +300,3 @@ const Page = () => {
 }
 
 export default Page
-
-

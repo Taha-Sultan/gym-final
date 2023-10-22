@@ -366,7 +366,7 @@
   align-items: flex-end;
   gap: 0.5rem;
   margin-left: -230px;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   margin-top: 490px;
 }
 
@@ -380,7 +380,7 @@
 .gridItem:nth-child(2){
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.2rem;
   align-items: center;
 }
 
@@ -519,8 +519,8 @@
     }
 
     .gridItem2{
-        margin-left: 5px;
-        width: 88%;
+        margin-left: 12px;
+        width: 93%;
         /* padding: 0rem 1rem 0rem 0.5rem; */
     }
 
@@ -712,6 +712,18 @@
     .gridItemTxtDiv{
         margin-top: -210px;
     }
+
+    .gridItem:nth-child(2){
+        gap: 0.2rem;
+    }
+
+    .gridItemTxtDiv1{
+        padding-bottom: 1rem;
+    }
+
+    .gridItemTxtDiv2{
+        padding-bottom: 2.5rem;
+    }
 }
 
 
@@ -724,7 +736,7 @@
 @media only screen and (min-width:765px) and (max-width:770px){
     .gridItem:nth-child(1){
         padding: 0rem 1rem 3rem 1.5rem !important;
-        width: 72% !important;
+        width: 80% !important;
     }
 
     .gridItem:nth-child(2){
@@ -736,7 +748,7 @@
     }
 
     .gridItem1{
-        width: 95% !important;
+        width: 100% !important;
         padding: 0 !important;
         margin-left: -30px !important;
     }
@@ -771,7 +783,7 @@
 @media only screen and (min-width:1438px) and (max-width:1441px){
     .gridItem2{
         width: 100% !important;
-        margin-left: 30px;
+        margin-left: 44px;
     }
 
     .gridItemTxtDiv1{
@@ -787,6 +799,7 @@
         margin-left: 1170px;
 
     }
+
 }
 
 
