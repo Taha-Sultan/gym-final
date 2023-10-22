@@ -68,6 +68,9 @@
 .mainFormDiv{
     width: 60%;
     padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     margin: auto;
 }
 
@@ -94,7 +97,7 @@
     letter-spacing: 0em;
     text-align: center;
     color: black;    
-    width: 30%;
+    width: 50%;
     margin: auto;
 }
 
@@ -236,6 +239,10 @@
     border-bottom: 2px solid #ff5733;
 }
 
+.formLabel{
+    color: #696969;
+}
+
 
 
 
@@ -293,6 +300,7 @@
 
     .txtMain{
         width: 100%;
+        font-size: 12px;
     }
 
     .mainFormDiv{
