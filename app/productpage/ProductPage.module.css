@@ -74,6 +74,7 @@
 
 .imgMainDiv{
     width: 40%;
+    padding-left: 5rem;
 }
 
 .descDiv{
@@ -101,6 +102,13 @@
     align-items: center;
     padding: 1rem 0rem 0rem 0rem;
     gap: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.priceAndRating .rating{
+    display: flex;
+    gap: 0.5rem;
 }
 
 .priceAndRating .price {
@@ -273,7 +281,8 @@
 
 
 .moreFromUs {
-    margin-top: 100px;
+    padding-top: 100px;
+    margin: auto;
 }
 
 .headingMore {
@@ -309,7 +318,7 @@
 
 .moreProducts {
     display: flex;
-    margin-top: 100px;
+    margin-top: 40px;
     padding-bottom: 100px;
 }
 
@@ -552,6 +561,89 @@
 
 @media only screen and (max-width:1025px) {
     .productSizes {
+        gap: 0rem;
+    }
+}
+
+@media only screen and (min-width:1020px) and (max-width:1445px){
+    .imgProduct{
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width:1025px){
+    /* .mainPage{
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .headingDesc{
+        font-size: 35px;
+    }
+
+    .imgProduct{
+        width: 75px;
+    }
+
+    .sizeBtns{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .addToCart{
+        margin-top: 20px;
+    }
+
+    .phantomImg{
+        width: 230px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:800px){
+    .imgMainDiv{
+        padding: 0rem 4rem !important;
+    }
+
+    .headingDesc{
+        font-size: 40px;
+        width: max-content !important;
+    }
+
+    .descDiv{
+        padding: 0rem 3rem !important;
+    }
+
+    .imgProduct{
+        width: 130px;
+    }
+
+    .moreProducts{
+        gap: 0.8rem;
+    }
+}
+
+@media only screen and (min-width:310px) and (max-width:430px){
+    .imgMainDiv{
+        padding: 0rem 1rem !important;
+    }
+
+    .descDiv{
+        padding: 0rem 1rem !important;
+    }
+}
+
+@media only screen and (min-width:319px) and (max-width:321px){
+    .sizeBtn{
+        font-size: 15px;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .sizeBtnMain{
+        font-size: 15px;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .right{
         gap: 0rem;
     }
 }

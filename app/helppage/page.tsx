@@ -47,7 +47,7 @@ const HelpPage = () => {
     </div>
     <div className={styles.messageForms}>
         <label className={`${styles.messageForm} ${styles.formLabel}`}  style={poppin6.style}>Message*</label>
-        <textarea name="message" id="" rows={10} defaultValue={""} />
+        <textarea name="message" id="" rows={7} defaultValue={""} />
     </div>
     <div className={styles.submitBtn} style={poppin6.style}>Submit</div>
 </div>

@@ -33,13 +33,13 @@ const ProductPage = () => {
         <div className={`col-lg-5 ${styles.imgMainDiv}`}>
             <div className={styles.productImgs}>
                 <div className={styles.mainProduct}>
-                    <Image width={1000} height={1000} src="/mainProduct.png" alt="" />
+                    <Image width={1000} height={1000} src="/mainProduct.png" alt="" className={styles.landingImg} />
                 </div>
                 <div className={styles.productSizes}>
-                    <Image className={`${styles.img1} ${styles.imgProduct}`} width={200} height={200} src="/productSizes.png" alt="" />
-                    <Image className={`${styles.img2} ${styles.imgProduct}`} width={200} height={200} src="/productSizes.png" alt="" />
-                    <Image className={`${styles.img3} ${styles.imgProduct}`} width={200} height={200} src="/productSizes.png" alt="" />
-                    <Image className={`${styles.img4} ${styles.imgProduct}`} width={200} height={200} src="/productSizes.png" alt="" />
+                    <Image className={`${styles.img1} ${styles.imgProduct}`} width={110} height={200} src="/productSizes.png" alt="" />
+                    <Image className={`${styles.img2} ${styles.imgProduct}`} width={110} height={200} src="/productSizes.png" alt="" />
+                    <Image className={`${styles.img3} ${styles.imgProduct}`} width={110} height={200} src="/productSizes.png" alt="" />
+                    <Image className={`${styles.img4} ${styles.imgProduct}`} width={110} height={200} src="/productSizes.png" alt="" />
                 </div>
             </div>
             <div className={styles.sizeChartDiv}>
@@ -89,7 +89,7 @@ const ProductPage = () => {
         <div className={`row ${styles.moreProducts}`}>
             <div className={`col-lg-3 col-6 ${styles.productMore1} ${styles.productMore}`}>
                 <div className={styles.imageMore}>
-                <Image width={350} height={350} src="/productMore.png" alt="" />
+                <Image width={350} height={350} src="/productMore.png" alt="" className= {styles.phantomImg} />
                 </div>
                 <div className={styles.descMore} style={poppin5.style}>
                     Phantom Hero “Manifesting Dreams” T-shirt
@@ -100,7 +100,7 @@ const ProductPage = () => {
             </div>
             <div className={`col-lg-3 col-6 ${styles.productMore2} ${styles.productMore}`}>
                 <div className={styles.imageMore}>
-                    <Image width={350} height={350} src="/productMore.png" alt="" />
+                    <Image width={350} height={350} src="/productMore.png" alt="" className= {styles.phantomImg} />
                 </div>
                 <div className={styles.descMore} style={poppin5.style}>
                     Phantom Hero “Manifesting Dreams” T-shirt
@@ -111,7 +111,7 @@ const ProductPage = () => {
             </div>
             <div className={`col-lg-3 col-6 ${styles.productMore3} ${styles.productMore}`}>
                 <div className={styles.imageMore}>
-                    <Image width={350} height={350} src="/productMore.png" alt="" />
+                    <Image width={350} height={350} src="/productMore.png" alt="" className= {styles.phantomImg} />
                 </div>
                 <div className={styles.descMore} style={poppin5.style}>
                     Phantom Hero “Manifesting Dreams” T-shirt
@@ -122,7 +122,7 @@ const ProductPage = () => {
             </div>
             <div className={`col-lg-3 col-6 ${styles.productMore4} ${styles.productMore}`}>
                 <div className={styles.imageMore}>
-                    <Image width={350} height={350} src="/productMore.png" alt="" />
+                    <Image width={350} height={350} src="/productMore.png" alt="" className= {styles.phantomImg} />
                 </div>
                 <div className={styles.descMore} style={poppin5.style}>
                     Phantom Hero “Manifesting Dreams” T-shirt
